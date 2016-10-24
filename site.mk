@@ -130,6 +130,7 @@ DEFAULT_GLUON_RELEASE := ffwss-v016h
 
 # Allow overriding the release number from the command line
 GLUON_RELEASE ?= $(DEFAULT_GLUON_RELEASE)
+GLUON_BRANCH=stable
 GLUON_REGION := eu
 
 # Default priority for updates.
