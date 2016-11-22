@@ -31,7 +31,8 @@ GLUON_SITE_PACKAGES := \
         ffsw-reboot \
         ffsw-chkgw \
         ffsw-keyupl \
-        iwinfo
+        iwinfo \
+	ffffm-additional-wifi-json-info
 
 # add offline ssid only if the target has wifi device
 ifeq ($(GLUON_TARGET),ar71xx-generic)
@@ -146,7 +147,7 @@ endif
 #                       opkg compare-versions "$1" '>>' "$2"
 #               to decide if a version is newer or not.
 
-DEFAULT_GLUON_RELEASE := ffwss-v019
+DEFAULT_GLUON_RELEASE := ffwss-v019a
 
 #       GLUON_RELEASE
 #               call make with custom GLUON_RELEASE flag, to use your own release version scheme.
