@@ -146,7 +146,6 @@ GLUON_SITE_PACKAGES += \
         $(TOOLS_PACKAGES)
 endif
 
-
 ##      DEFAULT_GLUON_RELEASE
 #               version string to use for images
 #               gluon relies on
