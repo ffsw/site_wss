@@ -33,33 +33,38 @@ GLUON_SITE_PACKAGES := \
         ffsw-keyupl \
         iwinfo \
 	ffffm-additional-wifi-json-info
+	
 
 # add offline ssid only if the target has wifi device
 ifeq ($(GLUON_TARGET),ar71xx-generic)
 GLUON_SITE_PACKAGES += \
-	ffsw-ssid-changer
+	ffsw-ssid-changer \
+	ffsw-wifi-quickfix
 endif
 
 ifeq ($(GLUON_TARGET),ar71xx-mikrotik)
 GLUON_SITE_PACKAGES += \
-	ffsw-ssid-changer
+	ffsw-ssid-changer \
+	ffsw-wifi-quickfix
 endif
 
 ifeq ($(GLUON_TARGET),ar71xx-nand)
 GLUON_SITE_PACKAGES += \
-	ffsw-ssid-changer
+	ffsw-ssid-changer \
+	ffsw-wifi-quickfix
 endif
 
 ifeq ($(GLUON_TARGET),mpc85xx-generic)
 GLUON_SITE_PACKAGES += \
-	ffsw-ssid-changer
+	ffsw-ssid-changer \
+	ffsw-wifi-quickfix
 endif
 
 ifeq ($(GLUON_TARGET),ramips-rt305x)
 GLUON_SITE_PACKAGES += \
-	ffsw-ssid-changer
+	ffsw-ssid-changer \
+	ffsw-wifi-quickfix
 endif
-
 # support the USB stack
 USB_PACKAGES_BASIC := \
         kmod-usb-core \
@@ -141,13 +146,14 @@ GLUON_SITE_PACKAGES += \
         $(TOOLS_PACKAGES)
 endif
 
+
 ##      DEFAULT_GLUON_RELEASE
 #               version string to use for images
 #               gluon relies on
 #                       opkg compare-versions "$1" '>>' "$2"
 #               to decide if a version is newer or not.
 
-DEFAULT_GLUON_RELEASE := ffwss-v019f
+DEFAULT_GLUON_RELEASE := ffwss-v020
 
 #       GLUON_RELEASE
 #               call make with custom GLUON_RELEASE flag, to use your own release version scheme.
