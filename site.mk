@@ -32,7 +32,8 @@ GLUON_SITE_PACKAGES := \
         ffsw-chkgw \
         ffsw-keyupl \
         iwinfo \
-	ffffm-additional-wifi-json-info
+	ffffm-additional-wifi-json-info \
+	ffsw-banner
 	
 
 # add offline ssid only if the target has wifi device
