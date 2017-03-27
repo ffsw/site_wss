@@ -1,7 +1,7 @@
 GLUON_SITE_FEEDS='ffrl ffsw ffpb'
 
 PACKAGES_FFSW_REPO='https://github.com/ffsw/packages.git'
-PACKAGES_FFSW_COMMIT=09f4d02584d2cdb647fe22af10838d751fa9c026
+PACKAGES_FFSW_COMMIT=8251c2eb2cd50543740c10bee4a91c4cac579504
 
 PACKAGES_FFRL_REPO=https://github.com/ffrl/ffrl-packages.git
 PACKAGES_FFRL_COMMIT=9ef54396cf79031b1b7e35af038b8a0f2ec1bd90
