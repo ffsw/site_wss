@@ -2,7 +2,7 @@
 GLUON_SITE_PACKAGES := \
         gluon-mesh-batman-adv-15 \
         gluon-authorized-keys \
-        ffpb-ebtables-net-rules \
+        ffho-ebtables-net-rules \
         gluon-alfred \
         gluon-respondd\
         gluon-autoupdater \
