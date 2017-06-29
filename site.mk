@@ -14,20 +14,18 @@ GLUON_SITE_PACKAGES := \
         gluon-config-mode-tunneldigger \
         gluon-ebtables-filter-multicast \
         gluon-ebtables-filter-ra-dhcp \
-        gluon-luci-admin \
-        gluon-luci-autoupdater \
-        gluon-luci-portconfig \
-        gluon-luci-private-wifi \
-        gluon-luci-wifi-config \
+        gluon-web-admin \
+        gluon-web-autoupdater \
+        gluon-web-portconfig \
+        gluon-web-private-wifi \
+        gluon-web-wifi-config \
+		gluon-mesh-batman-adv-15 \
         gluon-mesh-vpn-tunneldigger \
-        gluon-next-node \
         gluon-radvd \
         gluon-setup-mode \
         gluon-status-page \
         haveged \
-        iptables \
-        gluon-tunneldigger-watchdog \
-        gluon-migrate-vpn \
+        iptables \		
         ffsw-reboot \
         ffsw-chkgw \
         ffsw-keyupl \
