@@ -29,41 +29,61 @@ GLUON_SITE_PACKAGES := \
         ffsw-reboot \
         ffsw-chkgw \
         ffsw-keyupl \
-        iwinfo \
-	ffffm-additional-wifi-json-info \
-	ffsw-banner
+        iwinfo \	
+        ffsw-banner
 	
 
 # add offline ssid only if the target has wifi device
+ifeq ($(GLUON_TARGET),ipq806x)
+GLUON_SITE_PACKAGES += \
+	ffffm-additional-wifi-json-info \
+	ffsw-ssid-changer \
+	ffsw-wifi-quickfix
+endif
+
+ifeq ($(GLUON_TARGET),ar71xx-tiny)
+GLUON_SITE_PACKAGES += \
+	ffffm-additional-wifi-json-info \
+	ffsw-ssid-changer \
+	ffsw-wifi-quickfix
+endif
+
 ifeq ($(GLUON_TARGET),ar71xx-generic)
 GLUON_SITE_PACKAGES += \
+	ffffm-additional-wifi-json-info \	
 	ffsw-ssid-changer \
 	ffsw-wifi-quickfix
 endif
 
 ifeq ($(GLUON_TARGET),ar71xx-mikrotik)
 GLUON_SITE_PACKAGES += \
+	ffffm-additional-wifi-json-info \
 	ffsw-ssid-changer \
 	ffsw-wifi-quickfix
 endif
 
 ifeq ($(GLUON_TARGET),ar71xx-nand)
 GLUON_SITE_PACKAGES += \
+	ffffm-additional-wifi-json-info \
 	ffsw-ssid-changer \
 	ffsw-wifi-quickfix
 endif
 
 ifeq ($(GLUON_TARGET),mpc85xx-generic)
 GLUON_SITE_PACKAGES += \
+	ffffm-additional-wifi-json-info \
 	ffsw-ssid-changer \
 	ffsw-wifi-quickfix
 endif
 
 ifeq ($(GLUON_TARGET),ramips-rt305x)
 GLUON_SITE_PACKAGES += \
+	ffffm-additional-wifi-json-info \
 	ffsw-ssid-changer \
 	ffsw-wifi-quickfix
 endif
+
+
 # support the USB stack
 USB_PACKAGES_BASIC := \
         kmod-usb-core \
