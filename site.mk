@@ -34,12 +34,12 @@ GLUON_SITE_PACKAGES := \
 	
 
 # add offline ssid only if the target has wifi device
-ifeq ($(GLUON_TARGET),ipq806x) or
+ifeq (($(GLUON_TARGET),ipq806x) or
      ($(GLUON_TARGET),ar71xx-tiny) or
      ($(GLUON_TARGET),ar71xx-mikrotik) or
      ($(GLUON_TARGET),ar71xx-nand) or
      ($(GLUON_TARGET),mpc85xx-generic) or
-     ($(GLUON_TARGET),ramips-rt305x)
+     ($(GLUON_TARGET),ramips-rt305x))
   GLUON_SITE_PACKAGES += \
 	ffffm-additional-wifi-json-info \
 	ffsw-ssid-changer \
