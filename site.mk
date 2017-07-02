@@ -31,7 +31,7 @@ GLUON_SITE_PACKAGES := \
         ffsw-keyupl \
         iwinfo \
         ffsw-banner
-	
+
 
 # add offline ssid only if the target has wifi device
 ifeq ($(GLUON_TARGET),ipq806x)
