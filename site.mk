@@ -31,8 +31,7 @@ GLUON_SITE_PACKAGES := \
         ffsw-reboot \
         ffsw-chkgw \
         ffsw-keyupl \
-        iwinfo \
-	ffffm-additional-wifi-json-info \
+        iwinfo \	
 	ffsw-banner
 	
 
@@ -40,31 +39,40 @@ GLUON_SITE_PACKAGES := \
 ifeq ($(GLUON_TARGET),ar71xx-generic)
 GLUON_SITE_PACKAGES += \
 	ffsw-ssid-changer \
-	ffsw-wifi-quickfix
+	ffsw-wifi-quickfix \
+	ffffm-button-bind
 endif
 
 ifeq ($(GLUON_TARGET),ar71xx-mikrotik)
 GLUON_SITE_PACKAGES += \
 	ffsw-ssid-changer \
-	ffsw-wifi-quickfix
+	ffsw-wifi-quickfix \
+	ffffm-additional-wifi-json-info \
+	ffffm-button-bind
 endif
 
 ifeq ($(GLUON_TARGET),ar71xx-nand)
 GLUON_SITE_PACKAGES += \
 	ffsw-ssid-changer \
-	ffsw-wifi-quickfix
+	ffsw-wifi-quickfix \
+	ffffm-additional-wifi-json-info \
+	ffffm-button-bind
 endif
 
 ifeq ($(GLUON_TARGET),mpc85xx-generic)
 GLUON_SITE_PACKAGES += \
 	ffsw-ssid-changer \
-	ffsw-wifi-quickfix
+	ffsw-wifi-quickfix \
+	ffffm-additional-wifi-json-info \
+	ffffm-button-bind
 endif
 
 ifeq ($(GLUON_TARGET),ramips-rt305x)
 GLUON_SITE_PACKAGES += \
 	ffsw-ssid-changer \
-	ffsw-wifi-quickfix
+	ffsw-wifi-quickfix \
+	ffffm-additional-wifi-json-info \
+	ffffm-button-bind
 endif
 # support the USB stack
 USB_PACKAGES_BASIC := \
