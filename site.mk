@@ -168,6 +168,15 @@ GLUON_SITE_PACKAGES += \
         $(TOOLS_PACKAGES)
 endif
 
+##wifi-button pacakge only on some ar73-models
+ifeq ($(GLUON_TARGET),ar71xx-generic)
+	GLUON_TLWR1043_SITE_PACKAGES += ffffm-button-bind
+	GLUON_TLWR740_SITE_PACKAGES += ffffm-button-bind
+	GLUON_TLWR741_SITE_PACKAGES += ffffm-button-bind
+	GLUON_TLWR841_SITE_PACKAGES += ffffm-button-bind
+	GLUON_TLWR842_SITE_PACKAGES += ffffm-button-bind
+endif
+
 ##      DEFAULT_GLUON_RELEASE
 #               version string to use for images
 #               gluon relies on
