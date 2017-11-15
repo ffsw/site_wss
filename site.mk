@@ -191,6 +191,8 @@ endif
 	GLUON_tp-link-tl-wr1043n-nd-v2_SITE_PACKAGES := ffffm-button-bind
 	GLUON_tp-link-tl-wr1043n-nd-v3SITE_PACKAGES := ffffm-button-bind
 	GLUON_tp-link-tl-wr1043n-nd-v4_SITE_PACKAGES := ffffm-button-bind
+	#C25 zu Testzwecken mit aufgenommen
+	GLUON_tp-link-archer-c25-v1_SITE_PACKAGES := ffffm-button-bind	
 ###########################################################################
 
 
