@@ -195,7 +195,11 @@ endif
 	GLUON_tp-link-tl-wr1043n-nd-v3SITE_PACKAGES := ffffm-button-bind
 	GLUON_tp-link-tl-wr1043n-nd-v4_SITE_PACKAGES := ffffm-button-bind
 	#C25 zu Testzwecken mit aufgenommen
+<<<<<<< HEAD
 	GLUON_tp-link-archer-c25-v1_SITE_PACKAGES := ffffm-button-bind
+=======
+	GLUON_tp-link-archer-c25-v1_SITE_PACKAGES := ffffm-button-bind	
+>>>>>>> origin/master
 ###########################################################################
 
 
@@ -205,7 +209,11 @@ endif
 #                       opkg compare-versions "$1" '>>' "$2"
 #               to decide if a version is newer or not.
 
+<<<<<<< HEAD
 DEFAULT_GLUON_RELEASE := ffwss-v028b
+=======
+DEFAULT_GLUON_RELEASE := ffwss-v028a
+>>>>>>> origin/master
 
 #       GLUON_RELEASE
 #               call make with custom GLUON_RELEASE flag, to use your own release version scheme.
