@@ -30,7 +30,8 @@ GLUON_SITE_PACKAGES := \
         ffsw-chkgw \
         ffsw-keyupl \
         iwinfo \
-        ffsw-banner
+        ffsw-banner \
+	iperf3
 
 
 # add offline ssid only if the target has wifi device
@@ -38,14 +39,16 @@ ifeq ($(GLUON_TARGET),ar71xx-generic)
 GLUON_SITE_PACKAGES += \
 	ffffm-additional-wifi-json-info \
 	ffsw-ssid-changer \
-	ffsw-wifi-quickfix
+	ffsw-wifi-quickfix \
+	ffffm-button-bind
 endif
 
 ifeq ($(GLUON_TARGET),ar71xx-tiny)
 GLUON_SITE_PACKAGES += \
 	ffffm-additional-wifi-json-info \
 	ffsw-ssid-changer \
-	ffsw-wifi-quickfix
+	ffsw-wifi-quickfix \
+	ffffm-button-bind
 endif
 
 ifeq ($(GLUON_TARGET),ar71xx-nand)
@@ -191,6 +194,8 @@ endif
 	GLUON_tp-link-tl-wr1043n-nd-v2_SITE_PACKAGES := ffffm-button-bind
 	GLUON_tp-link-tl-wr1043n-nd-v3SITE_PACKAGES := ffffm-button-bind
 	GLUON_tp-link-tl-wr1043n-nd-v4_SITE_PACKAGES := ffffm-button-bind
+	#C25 zu Testzwecken mit aufgenommen
+	GLUON_tp-link-archer-c25-v1_SITE_PACKAGES := ffffm-button-bind
 ###########################################################################
 
 
@@ -200,7 +205,7 @@ endif
 #                       opkg compare-versions "$1" '>>' "$2"
 #               to decide if a version is newer or not.
 
-DEFAULT_GLUON_RELEASE := ffwss-v027m
+DEFAULT_GLUON_RELEASE := ffwss-v028b
 
 #       GLUON_RELEASE
 #               call make with custom GLUON_RELEASE flag, to use your own release version scheme.
