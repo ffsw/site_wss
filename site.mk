@@ -213,7 +213,8 @@ endif
 #                       opkg compare-versions "$1" '>>' "$2"
 #               to decide if a version is newer or not.
 
-DEFAULT_GLUON_RELEASE := ffwss-v033m
+DEFAULT_GLUON_RELEASE := ffwss-v034
+
 
 #       GLUON_RELEASE
 #               call make with custom GLUON_RELEASE flag, to use your own release version scheme.
@@ -226,9 +227,6 @@ DEFAULT_GLUON_RELEASE := ffwss-v033m
 GLUON_RELEASE ?= $(DEFAULT_GLUON_RELEASE)
 # Region code required for some images; supported values: us eu
 GLUON_REGION ?= eu
-
-#required for ath10k devices like C5/C7
-GLUON_ATH10K_MESH ?= 11s
 
 # Default priority for updates.
 GLUON_PRIORITY ?= 0
