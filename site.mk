@@ -23,16 +23,7 @@ GLUON_FEATURES := \
 #		A minus sign may be prepended to remove a packages from the
 #		selection that would be enabled by default or due to the
 #		chosen feature flags
-GLUON_SITE_PACKAGES := \        
-        gluon-authorized-keys \               
-        haveged \
-        iptables \
-        ffsw-reboot \
-        ffsw-chkgw \
-        ffsw-keyupl \
-        iwinfo \
-        ffsw-banner \
-	iperf3
+GLUON_SITE_PACKAGES := gluon-authorized-keys haveged ffsw-reboot ffsw-chkgw ffsw-keyupl iwinfo ffsw-banner iperf3
 
 #No Wifi Info 
 NO_WIFI_INFO := \
@@ -44,7 +35,7 @@ GLUON_SITE_PACKAGES += \
 	ffffm-additional-wifi-json-info \
 	ffsw-ssid-changer \
 	ffsw-wifi-quickfix \
-	ffffm-button-bind
+	#ffffm-button-bind     --button-bind muss angepasst werden
 endif
 
 ifeq ($(GLUON_TARGET),ar71xx-tiny)
