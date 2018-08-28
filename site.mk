@@ -50,7 +50,7 @@ GLUON_SITE_PACKAGES += \
 	ffffm-additional-wifi-json-info \
 	ffsw-ssid-changer \
 	ffsw-wifi-quickfix \
-	ffffm-button-bind
+	#ffffm-button-bind     --button-bind muss angepasst werden
 endif
 
 ifeq ($(GLUON_TARGET),ar71xx-nand)
@@ -201,6 +201,7 @@ endif
 	#Alle Archer ohne Wifi-Info
 	GLUON_tp-link-archer-c25-v1_SITE_PACKAGES += $(NO_WIFI_INFO)
 	GLUON_tp-link-archer-c7-v2_SITE_PACKAGES += $(NO_WIFI_INFO)
+	GLUON_tp-link-archer-c7-v4_SITE_PACKAGES += $(NO_WIFI_INFO)
 	GLUON_tp-link-archer-c5-v1_SITE_PACKAGES += $(NO_WIFI_INFO)
 	
 ###########################################################################
@@ -212,7 +213,8 @@ endif
 #                       opkg compare-versions "$1" '>>' "$2"
 #               to decide if a version is newer or not.
 
-DEFAULT_GLUON_RELEASE := ffwss-v033
+DEFAULT_GLUON_RELEASE := ffwss-v034
+
 
 #       GLUON_RELEASE
 #               call make with custom GLUON_RELEASE flag, to use your own release version scheme.
@@ -225,9 +227,6 @@ DEFAULT_GLUON_RELEASE := ffwss-v033
 GLUON_RELEASE ?= $(DEFAULT_GLUON_RELEASE)
 # Region code required for some images; supported values: us eu
 GLUON_REGION ?= eu
-
-#required for ath10k devices like C5/C7
-GLUON_ATH10K_MESH ?= 11s
 
 # Default priority for updates.
 GLUON_PRIORITY ?= 0
