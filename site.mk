@@ -1,5 +1,7 @@
 ##		ffwss-site.mk
 
+GLUON_MULTIDOMAIN=1
+
 ##	GLUON_FEATURES
 #		Specify Gluon features/packages to enable;
 #		Gluon will automatically enable a set of packages
@@ -214,7 +216,7 @@ endif
 #                       opkg compare-versions "$1" '>>' "$2"
 #               to decide if a version is newer or not.
 
-DEFAULT_GLUON_RELEASE := ffwss-v034a
+DEFAULT_GLUON_RELEASE := ffwss-v035a
 
 
 #       GLUON_RELEASE
