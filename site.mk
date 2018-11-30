@@ -14,7 +14,8 @@ GLUON_FEATURES := \
 	ebtables-source-filter \
 	mesh-batman-adv-15 \
 	mesh-vpn-tunneldigger \
-	radvd \
+	radvd \	
+	radv-filter \
 	respondd \
 	status-page \
 	web-advanced \
@@ -26,7 +27,8 @@ GLUON_FEATURES := \
 #		A minus sign may be prepended to remove a packages from the
 #		selection that would be enabled by default or due to the
 #		chosen feature flags
-GLUON_SITE_PACKAGES := 	gluon-authorized-keys \
+GLUON_SITE_PACKAGES :=	gluon-authorized-keys \
+			gluon-tunneldigger-watchdog \			
 			haveged ffsw-reboot \
 			ffsw-chkgw ffsw-keyupl \
 			iwinfo ffsw-banner \
