@@ -27,12 +27,11 @@ GLUON_FEATURES := \
 #		A minus sign may be prepended to remove a packages from the
 #		selection that would be enabled by default or due to the
 #		chosen feature flags
-GLUON_SITE_PACKAGES :=	gluon-authorized-keys \
-						gluon-tunneldigger-watchdog \
-						haveged ffsw-reboot \
-						ffsw-chkgw ffsw-keyupl \
-						iwinfo ffsw-banner \
-						iperf3
+GLUON_SITE_PACKAGES :=	gluon-authorized-keys \						
+			haveged ffsw-reboot \
+			ffsw-chkgw ffsw-keyupl \
+			iwinfo ffsw-banner \
+			iperf3
 
 #No Wifi Info 
 NO_WIFI_INFO := \
