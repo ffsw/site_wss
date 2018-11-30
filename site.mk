@@ -13,7 +13,7 @@ GLUON_FEATURES := \
 	ebtables-source-filter \
 	mesh-batman-adv-15 \
 	mesh-vpn-tunneldigger \
-	radvd \		
+	radvd \
 	respondd \
 	status-page \
 	web-advanced \
