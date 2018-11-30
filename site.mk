@@ -1,11 +1,10 @@
 ##		ffwss-site.mk
 
-GLUON_MULTIDOMAIN=1
-
 ##	GLUON_FEATURES
 #		Specify Gluon features/packages to enable;
 #		Gluon will automatically enable a set of packages
 #		depending on the combination of features listed
+
 GLUON_FEATURES := \
 	autoupdater \
 	ebtables-filter-multicast \
@@ -14,12 +13,13 @@ GLUON_FEATURES := \
 	ebtables-source-filter \
 	mesh-batman-adv-15 \
 	mesh-vpn-tunneldigger \
-	radvd \	
-	radv-filter \
+	radvd \		
 	respondd \
 	status-page \
 	web-advanced \
 	web-wizard
+
+# radv-filterd\ erstmal weglassen - nicht sicher obs zusammen mit ebtables-filter-ra-dhcp funktioniert
 
 
 ##	GLUON_SITE_PACKAGES
@@ -239,3 +239,5 @@ GLUON_PRIORITY ?= 0
 
 # Languages to include
 GLUON_LANGS ?= en de
+
+GLUON_MULTIDOMAIN=1
