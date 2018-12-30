@@ -4,18 +4,21 @@
 #		Specify Gluon features/packages to enable;
 #		Gluon will automatically enable a set of packages
 #		depending on the combination of features listed
+
 GLUON_FEATURES := \
 	autoupdater \
 	ebtables-filter-multicast \
 	ebtables-filter-ra-dhcp \
-	ebtables-limit-arp \
+	ebtables-source-filter \
 	mesh-batman-adv-15 \
 	mesh-vpn-tunneldigger \
 	radvd \
 	respondd \
 	status-page \
 	web-advanced \
-	web-wizard
+	web-wizard \
+
+# radv-filterd\ erstmal weglassen - nicht sicher obs zusammen mit ebtables-filter-ra-dhcp funktioniert
 
 
 ##	GLUON_SITE_PACKAGES
@@ -23,7 +26,8 @@ GLUON_FEATURES := \
 #		A minus sign may be prepended to remove a packages from the
 #		selection that would be enabled by default or due to the
 #		chosen feature flags
-GLUON_SITE_PACKAGES := 	gluon-authorized-keys \
+GLUON_SITE_PACKAGES :=	gluon-config-mode-geo-location-osm \
+			gluon-authorized-keys \
 			haveged ffsw-reboot \
 			ffsw-chkgw ffsw-keyupl \
 			iwinfo ffsw-banner \
@@ -214,7 +218,7 @@ endif
 #                       opkg compare-versions "$1" '>>' "$2"
 #               to decide if a version is newer or not.
 
-DEFAULT_GLUON_RELEASE := ffwss-v034a
+DEFAULT_GLUON_RELEASE := ffwss-v036
 
 
 #       GLUON_RELEASE
@@ -234,3 +238,5 @@ GLUON_PRIORITY ?= 0
 
 # Languages to include
 GLUON_LANGS ?= en de
+
+GLUON_MULTIDOMAIN=0
