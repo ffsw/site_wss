@@ -17,7 +17,6 @@ GLUON_FEATURES := \
 	status-page \
 	web-advanced \
 	web-wizard \
-	config-mode-domain-select
 
 # radv-filterd\ erstmal weglassen - nicht sicher obs zusammen mit ebtables-filter-ra-dhcp funktioniert
 
