@@ -31,7 +31,7 @@ GLUON_SITE_PACKAGES :=	gluon-config-mode-geo-location-osm \
 			ffsw-reboot \
 			ffsw-chkgw ffsw-keyupl \
 			ffsw-banner \
-			ffho-config-mode-site-select \			
+			ffho-config-mode-site-select \
 			iwinfo \
 			haveged \
 			iperf3
