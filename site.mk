@@ -28,9 +28,12 @@ GLUON_FEATURES := \
 #		chosen feature flags
 GLUON_SITE_PACKAGES :=	gluon-config-mode-geo-location-osm \
 			gluon-authorized-keys \
-			haveged ffsw-reboot \
+			ffsw-reboot \
 			ffsw-chkgw ffsw-keyupl \
-			iwinfo ffsw-banner \
+			ffsw-banner \
+			ffho-config-mode-site-select \			
+			iwinfo \
+			haveged \
 			iperf3
 
 #No Wifi Info 
@@ -218,7 +221,7 @@ endif
 #                       opkg compare-versions "$1" '>>' "$2"
 #               to decide if a version is newer or not.
 
-DEFAULT_GLUON_RELEASE := ffwss-v036
+DEFAULT_GLUON_RELEASE := ffwss-v036ms
 
 
 #       GLUON_RELEASE
