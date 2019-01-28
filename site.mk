@@ -29,9 +29,11 @@ GLUON_FEATURES := \
 GLUON_SITE_PACKAGES :=	gluon-config-mode-geo-location-osm \
 			gluon-authorized-keys \
 			ffsw-reboot \
-			ffsw-chkgw ffsw-keyupl \
+			ffsw-chkgw \
+			ffsw-keyupl \
 			ffsw-banner \
 			ffho-config-mode-site-select \
+			ffws-add-hostname-prefix \
 			iwinfo \
 			haveged \
 			iperf3
@@ -221,7 +223,7 @@ endif
 #                       opkg compare-versions "$1" '>>' "$2"
 #               to decide if a version is newer or not.
 
-DEFAULT_GLUON_RELEASE := ffwss-v036ms2
+DEFAULT_GLUON_RELEASE := ffwss-v036ms3
 
 
 #       GLUON_RELEASE
