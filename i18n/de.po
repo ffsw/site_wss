@@ -18,9 +18,9 @@ msgstr ""
 
 msgid "gluon-config-mode:hostname-help"
 msgstr ""
-"Bitte Knotennamen <b>ohne</b> Präfix eingeben. Dies wird automatisch vorangestellt."
-"Der Knotenname dient ausschließlich zur Identifikation deines Knotens, z.B. auf einer Knotenkarte. "
+"Der Knotenname dient ausschließlich zur Identifikation des Knotens, z.B. auf einer Knotenkarte. "
 "Er hat keinen Einfluss auf den Namen (SSID) des ausgestrahlten WLANs. "
+"Das passende Präfix muss nicht eingegeben werden. Es wird automatisch vorangestellt."
 
 msgid "gluon-config-mode:reboot"
 msgstr ""
