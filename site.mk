@@ -33,7 +33,7 @@ GLUON_SITE_PACKAGES :=	gluon-config-mode-geo-location-osm \
 			ffsw-keyupl \
 			ffsw-banner \
 			ffho-config-mode-site-select \
-			ffws-add-hostname-prefix \
+			ffsw-add-hostname-prefix \
 			iwinfo \
 			haveged \
 			iperf3
