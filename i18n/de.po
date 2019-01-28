@@ -76,5 +76,5 @@ msgstr "Internetverbindung nutzen (VPN via L2TP)"
 
 msgid "gluon-config-mode:site-select"
 msgstr ""
-"Bitte die Region auswählen, in der sich der Knoten befindet."
+"Bitte die Region auswählen, in der sich der Knoten befindet. "
 "Der Knoten kann sich nur mit Knoten der gleichen Region verbinden."
