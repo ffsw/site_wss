@@ -1,7 +1,7 @@
 GLUON_SITE_FEEDS='ffsw ffho'
 
 PACKAGES_FFSW_REPO='https://github.com/ffsw/packages.git'
-PACKAGES_FFSW_COMMIT=3b9a47b7a8ca1de22e78f531d902af2add38e956
+PACKAGES_FFSW_COMMIT=2463b35b47751456c499e3a3a814137048d4080d
 
 PACKAGES_FFHO_REPO=https://git.ffho.net/freifunkhochstift/ffho-packages.git
 PACKAGES_FFHO_BRANCH=master
