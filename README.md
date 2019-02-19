@@ -1,6 +1,8 @@
 # site_wss
 
 [![GitHub last commit](https://img.shields.io/github/last-commit/:ffsw/:site_wss.svg)
+
+https://img.shields.io/github/last-commit/ffsw/site_wss.svg
 	
 [GitHub versions/tags/commits](#github-versionstagscommits)
 
