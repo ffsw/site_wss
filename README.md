@@ -1,8 +1,9 @@
+https://freifunk-suedwest.de/wp-content/themes/ffsw/images/logo_ws.png
+
 # site_wss
 
-[![GitHub last commit](https://img.shields.io/github/last-commit/ffsw/site_wss.svg)
-
-
+https://img.shields.io/github/last-commit/ffsw/site_wss.svg?style=plastic
+ 
 	
 [GitHub versions/tags/commits](#github-versionstagscommits)
 
