@@ -1,4 +1,4 @@
-[![](https://freifunk-suedwest.de/wp-content/themes/ffsw/images/logo_ws.png)
+(https://freifunk-suedwest.de/wp-content/themes/ffsw/images/logo_ws.png)
 
 # site_wss
 
