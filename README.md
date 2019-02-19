@@ -1,4 +1,4 @@
-![Freifunk Logo](https://freifunk-suedwest.de/wp-content/themes/ffsw/images/logo_ws.png=400x36)
+![Freifunk Logo](https://freifunk-suedwest.de/wp-content/themes/ffsw/images/logo_ws.png)<!-- .element height="50%" width="50%" -->
 
 # site_wss
 
