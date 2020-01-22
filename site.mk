@@ -240,4 +240,6 @@ GLUON_PRIORITY ?= 0
 GLUON_LANGS ?= en de
 
 GLUON_MULTIDOMAIN=0
-GLUON_DEPRECATED=full
+
+# build images for deprecated devices (e.g. ar71xx-tiny)
+GLUON_DEPRECATED ?= full
