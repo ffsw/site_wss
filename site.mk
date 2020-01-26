@@ -11,8 +11,7 @@ GLUON_FEATURES := \
 	ebtables-filter-ra-dhcp \
 	ebtables-source-filter \
 	mesh-batman-adv-15 \
-	mesh-vpn-tunneldigger \
-	radvd \
+	mesh-vpn-tunneldigger \	
 	respondd \
 	status-page \
 	web-advanced \
@@ -42,7 +41,7 @@ ifeq ($(GLUON_TARGET),ar71xx-generic)
 GLUON_SITE_PACKAGES += \
 	ffsw-ssid-changer \
 	ffsw-wifi-quickfix \
-	ffffm-button-bind \   	
+	ffffm-button-bind
 endif
 
 ifeq ($(GLUON_TARGET),ar71xx-tiny)
@@ -57,24 +56,21 @@ ifeq ($(GLUON_TARGET),ar71xx-nand)
 GLUON_SITE_PACKAGES += \
 	ffsw-ssid-changer \
 	ffsw-wifi-quickfix \
-	ffffm-button-bind \
-	airtime
+	ffffm-button-bind
 endif
 
 ifeq ($(GLUON_TARGET),brcm2708-bcm2708)
 GLUON_SITE_PACKAGES += \
 	ffsw-ssid-changer \
 	ffsw-wifi-quickfix \
-	ffffm-button-bind \
-	#ffffm-additional-wifi-json-info   --funzt in 2018 nicht	
+	ffffm-button-bind	
 endif
 
 ifeq ($(GLUON_TARGET),brcm2708-bcm2709)
 GLUON_SITE_PACKAGES += \
 	ffsw-ssid-changer \
 	ffsw-wifi-quickfix \
-	ffffm-button-bind
-	#ffffm-additional-wifi-json-info   --funzt in 2018 nicht	
+	ffffm-button-bind	
 endif
 
 ifeq ($(GLUON_TARGET),mpc85xx-generic)
