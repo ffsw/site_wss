@@ -11,7 +11,7 @@ GLUON_FEATURES := \
 	ebtables-filter-ra-dhcp \
 	ebtables-source-filter \
 	mesh-batman-adv-15 \
-	mesh-vpn-tunneldigger \	
+	mesh-vpn-tunneldigger \
 	respondd \
 	status-page \
 	web-advanced \
