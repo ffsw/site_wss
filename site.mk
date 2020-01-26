@@ -48,9 +48,10 @@ NO_WIFI := \
 	-respondd-module-airtime
 
 ifeq ($(GLUON_TARGET),x86-generic)
-# support the usb stack on x86 devices
-# and add a few common USB NICs
-GLUON_SITE_PACKAGES += NO_WIFI
+	# support the usb stack on x86 devices
+	# and add a few common USB NICs
+	GLUON_SITE_PACKAGES += NO_WIFI
+endif
 
 ifeq ($(GLUON_TARGET),ar71xx-tiny)
 GLUON_SITE_PACKAGES += \
