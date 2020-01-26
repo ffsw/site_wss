@@ -30,19 +30,27 @@ GLUON_SITE_PACKAGES :=	gluon-config-mode-geo-location-osm \
 			haveged ffsw-reboot \
 			ffsw-chkgw ffsw-keyupl \
 			iwinfo ffsw-banner \
-			iperf3
+			iperf3 \
+			ffsw-ssid-changer \
+			ffsw-wifi-quickfix \
+			ffffm-button-bind \
+			respondd-module-airtime
 
 #No Wifi Info 
 NO_WIFI_INFO := \
-	-ffffm-additional-wifi-json-info \
+	-respondd-module-airtime \
 
-# add offline ssid only if the target has wifi device
-ifeq ($(GLUON_TARGET),ar71xx-generic)
-GLUON_SITE_PACKAGES += \
-	ffsw-ssid-changer \
-	ffsw-wifi-quickfix \
-	ffffm-button-bind
-endif
+# no wifi pacakage in no wifi-targets
+NO_WIFI := \
+	-ffsw-ssid-changer \
+	-ffsw-wifi-quickfix \
+	-ffffm-button-bind \
+	-respondd-module-airtime
+
+ifeq ($(GLUON_TARGET),x86-generic)
+# support the usb stack on x86 devices
+# and add a few common USB NICs
+GLUON_SITE_PACKAGES += NO_WIFI
 
 ifeq ($(GLUON_TARGET),ar71xx-tiny)
 GLUON_SITE_PACKAGES += \
