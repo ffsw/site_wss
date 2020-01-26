@@ -42,31 +42,30 @@ ifeq ($(GLUON_TARGET),ar71xx-generic)
 GLUON_SITE_PACKAGES += \
 	ffsw-ssid-changer \
 	ffsw-wifi-quickfix \
-	ffffm-button-bind    
-	#ffffm-additional-wifi-json-info   --funzt in 2018 nicht	
+	ffffm-button-bind \   	
 endif
 
 ifeq ($(GLUON_TARGET),ar71xx-tiny)
 GLUON_SITE_PACKAGES += \
 	ffsw-ssid-changer \
 	ffsw-wifi-quickfix \
-	ffffm-button-bind
-	#ffffm-additional-wifi-json-info   --funzt in 2018 nicht	
+	ffffm-button-bind \	
+	respondd-module-airtime
 endif
 
 ifeq ($(GLUON_TARGET),ar71xx-nand)
 GLUON_SITE_PACKAGES += \
 	ffsw-ssid-changer \
 	ffsw-wifi-quickfix \
-	ffffm-button-bind
-	#ffffm-additional-wifi-json-info   --funzt in 2018 nicht	
+	ffffm-button-bind \
+	airtime
 endif
 
 ifeq ($(GLUON_TARGET),brcm2708-bcm2708)
 GLUON_SITE_PACKAGES += \
 	ffsw-ssid-changer \
 	ffsw-wifi-quickfix \
-	ffffm-button-bind
+	ffffm-button-bind \
 	#ffffm-additional-wifi-json-info   --funzt in 2018 nicht	
 endif
 
@@ -82,8 +81,7 @@ ifeq ($(GLUON_TARGET),mpc85xx-generic)
 GLUON_SITE_PACKAGES += \
 	ffsw-ssid-changer \
 	ffsw-wifi-quickfix \
-	ffffm-button-bind
-	#ffffm-additional-wifi-json-info   --funzt in 2018 nicht	
+	ffffm-button-bind	
 endif
 
 # support the USB stack
@@ -218,7 +216,7 @@ endif
 #                       opkg compare-versions "$1" '>>' "$2"
 #               to decide if a version is newer or not.
 
-DEFAULT_GLUON_RELEASE := ffwss-v040
+DEFAULT_GLUON_RELEASE := ffwss-v040a
 
 
 #       GLUON_RELEASE
