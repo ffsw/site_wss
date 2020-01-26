@@ -47,9 +47,7 @@ NO_WIFI := \
 	-ffffm-button-bind \
 	-respondd-module-airtime
 
-ifeq ($(GLUON_TARGET),x86-generic)
-	# support the usb stack on x86 devices
-	# and add a few common USB NICs
+ifeq ($(GLUON_TARGET),x86-64)
 	GLUON_SITE_PACKAGES += NO_WIFI
 endif
 
