@@ -40,51 +40,24 @@ GLUON_SITE_PACKAGES :=	gluon-config-mode-geo-location-osm \
 NO_WIFI_INFO := \
 	-respondd-module-airtime \
 
-# no wifi pacakage in no wifi-targets
-NO_WIFI := \
-	-ffsw-ssid-changer \
-	-ffsw-wifi-quickfix \
-	-ffffm-button-bind \
-	-respondd-module-airtime
-
+#no wifi in x86 targets
+ifeq ($(GLUON_TARGET),x86-generic)
+	NO_WIFI := TRUE
+endif
+ifeq ($(GLUON_TARGET),x86-geode)
+	NO_WIFI := TRUE
+endif
 ifeq ($(GLUON_TARGET),x86-64)
-	GLUON_SITE_PACKAGES += NO_WIFI
+	NO_WIFI := TRUE
 endif
 
-ifeq ($(GLUON_TARGET),ar71xx-tiny)
-GLUON_SITE_PACKAGES += \
-	ffsw-ssid-changer \
-	ffsw-wifi-quickfix \
-	ffffm-button-bind \
-	respondd-module-airtime
-endif
-
-ifeq ($(GLUON_TARGET),ar71xx-nand)
-GLUON_SITE_PACKAGES += \
-	ffsw-ssid-changer \
-	ffsw-wifi-quickfix \
-	ffffm-button-bind
-endif
-
-ifeq ($(GLUON_TARGET),brcm2708-bcm2708)
-GLUON_SITE_PACKAGES += \
-	ffsw-ssid-changer \
-	ffsw-wifi-quickfix \
-	ffffm-button-bind	
-endif
-
-ifeq ($(GLUON_TARGET),brcm2708-bcm2709)
-GLUON_SITE_PACKAGES += \
-	ffsw-ssid-changer \
-	ffsw-wifi-quickfix \
-	ffffm-button-bind
-endif
-
-ifeq ($(GLUON_TARGET),mpc85xx-generic)
-GLUON_SITE_PACKAGES += \
-	ffsw-ssid-changer \
-	ffsw-wifi-quickfix \
-	ffffm-button-bind
+#if NO_WIFI is dfined, remove these packages
+ifdef NO_WIFI
+	GLUON_SITE_PACKAGES += \
+		-ffsw-ssid-changer \
+		-ffsw-wifi-quickfix \
+		-ffffm-button-bind \
+		-respondd-module-airtime
 endif
 
 # support the USB stack
