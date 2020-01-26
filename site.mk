@@ -57,7 +57,7 @@ ifeq ($(GLUON_TARGET),ar71xx-tiny)
 GLUON_SITE_PACKAGES += \
 	ffsw-ssid-changer \
 	ffsw-wifi-quickfix \
-	ffffm-button-bind \	
+	ffffm-button-bind \
 	respondd-module-airtime
 endif
 
@@ -79,14 +79,14 @@ ifeq ($(GLUON_TARGET),brcm2708-bcm2709)
 GLUON_SITE_PACKAGES += \
 	ffsw-ssid-changer \
 	ffsw-wifi-quickfix \
-	ffffm-button-bind	
+	ffffm-button-bind
 endif
 
 ifeq ($(GLUON_TARGET),mpc85xx-generic)
 GLUON_SITE_PACKAGES += \
 	ffsw-ssid-changer \
 	ffsw-wifi-quickfix \
-	ffffm-button-bind	
+	ffffm-button-bind
 endif
 
 # support the USB stack
