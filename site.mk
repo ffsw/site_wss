@@ -16,7 +16,6 @@ GLUON_FEATURES := \
 	status-page \
 	web-advanced \
 	web-wizard \
-	gluon-web-private-wifi \
 
 # radv-filterd\ erstmal weglassen - nicht sicher obs zusammen mit ebtables-filter-ra-dhcp funktioniert
 
@@ -28,6 +27,7 @@ GLUON_FEATURES := \
 #		chosen feature flags
 GLUON_SITE_PACKAGES :=	gluon-config-mode-geo-location-osm \
 			gluon-authorized-keys \
+			gluon-web-private-wifi \
 			haveged ffsw-reboot \
 			ffsw-chkgw ffsw-keyupl \
 			iwinfo ffsw-banner \
