@@ -16,7 +16,6 @@ GLUON_FEATURES := \
 	status-page \
 	web-advanced \
 	web-wizard \
-	gluon-web-private-wifi \
 
 # radv-filterd\ erstmal weglassen - nicht sicher obs zusammen mit ebtables-filter-ra-dhcp funktioniert
 
@@ -193,7 +192,7 @@ endif
 #                       opkg compare-versions "$1" '>>' "$2"
 #               to decide if a version is newer or not.
 
-DEFAULT_GLUON_RELEASE := ffwss-v043
+DEFAULT_GLUON_RELEASE := ffwss-v042
 
 
 #       GLUON_RELEASE
