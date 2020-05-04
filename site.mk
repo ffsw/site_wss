@@ -34,8 +34,7 @@ GLUON_SITE_PACKAGES :=	gluon-config-mode-geo-location-osm \
 			iperf3 \
 			ffsw-ssid-changer \
 			ffsw-wifi-quickfix \
-			ffffm-button-bind \
-			ffsw-name-conformizer \
+			ffffm-button-bind \			
 			ffsw-add-hostname-prefix
 			#respondd-module-airtime
 
@@ -195,7 +194,7 @@ endif
 #                       opkg compare-versions "$1" '>>' "$2"
 #               to decide if a version is newer or not.
 
-DEFAULT_GLUON_RELEASE := ffwss-v043t6
+DEFAULT_GLUON_RELEASE := ffwss-v043t80
 
 
 #       GLUON_RELEASE
