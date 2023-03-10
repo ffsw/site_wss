@@ -32,13 +32,7 @@ GLUON_SITE_PACKAGES :=	gluon-config-mode-geo-location-osm \
 			iwinfo ffsw-banner \
 			iperf3 \
 			ffsw-ssid-changer \
-			ffsw-wifi-quickfix \
-			ffffm-button-bind
-			#respondd-module-airtime
-
-#No Wifi Info 
-NO_WIFI_INFO := \
-	-respondd-module-airtime \
+			ffsw-wifi-quickfix
 
 #no wifi in x86 targets
 ifeq ($(GLUON_TARGET),x86-generic)
@@ -55,9 +49,7 @@ endif
 ifdef NO_WIFI
 	GLUON_SITE_PACKAGES += \
 		-ffsw-ssid-changer \
-		-ffsw-wifi-quickfix \
-		-ffffm-button-bind \
-		-respondd-module-airtime
+		-ffsw-wifi-quickfix
 endif
 
 # support the USB stack
