@@ -193,7 +193,7 @@ endif
 #                       opkg compare-versions "$1" '>>' "$2"
 #               to decide if a version is newer or not.
 
-DEFAULT_GLUON_RELEASE := ffwss-v048
+DEFAULT_GLUON_RELEASE := ffsw-v048
 
 
 #       GLUON_RELEASE
@@ -217,4 +217,4 @@ GLUON_LANGS ?= en de
 GLUON_MULTIDOMAIN=0
 
 # build images for deprecated devices (e.g. ar71xx-tiny)
-GLUON_DEPRECATED ?= full
+GLUON_DEPRECATED ?= none
