@@ -15,10 +15,9 @@ GLUON_FEATURES := \
 	respondd \
 	status-page \
 	web-advanced \
-	web-wizard \
+	web-wizard
 
-# radv-filterd\ erstmal weglassen - nicht sicher obs zusammen mit ebtables-filter-ra-dhcp funktioniert
-
+GLUON_FEATURES_standard := wireless-encryption-wpa3
 
 ##	GLUON_SITE_PACKAGES
 #		Specify additional Gluon/LEDE packages to include here;
