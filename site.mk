@@ -216,4 +216,4 @@ GLUON_LANGS ?= en de
 GLUON_MULTIDOMAIN=0
 
 # build images for deprecated devices (e.g. ar71xx-tiny)
-GLUON_DEPRECATED ?= none
+GLUON_DEPRECATED ?= 0
