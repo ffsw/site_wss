@@ -1,22 +1,22 @@
 ##		ffwss-site.mk
 
-##	GLUON_FEATURES
+##	FEATURES
 #		Specify Gluon features/packages to enable;
 #		Gluon will automatically enable a set of packages
 #		depending on the combination of features listed
 
-GLUON_FEATURES := \
-	autoupdater \
-	ebtables-filter-multicast \
-	ebtables-filter-ra-dhcp \
-	ebtables-source-filter \
-	mesh-batman-adv-15 \
-	mesh-vpn-tunneldigger \
-	respondd \
-	status-page \
-	web-advanced \
-	web-wizard
-
+features({
+	'autoupdater',
+	'ebtables-filter-multicast',
+	'ebtables-filter-ra-dhcp',
+	'ebtables-source-filter',
+	'mesh-batman-adv-15',
+	'mesh-vpn-tunneldigger',
+	'respondd',
+	'status-page',
+	'web-advanced',
+	'web-wizard'
+})
 GLUON_FEATURES_standard := wireless-encryption-wpa3
 
 ##	GLUON_SITE_PACKAGES
@@ -24,15 +24,17 @@ GLUON_FEATURES_standard := wireless-encryption-wpa3
 #		A minus sign may be prepended to remove a packages from the
 #		selection that would be enabled by default or due to the
 #		chosen feature flags
-GLUON_SITE_PACKAGES :=	gluon-config-mode-geo-location-osm \
-			gluon-authorized-keys \
-			gluon-web-private-wifi \
-			ffsw-reboot \
-			ffsw-chkgw ffsw-keyupl \
-			iwinfo ffsw-banner \
-			iperf3 \
-			ffsw-ssid-changer \
-			ffsw-wifi-quickfix
+packages({
+	'gluon-config-mode-geo-location-osm',
+	'gluon-authorized-keys',
+	'gluon-web-private-wifi',
+	'ffsw-reboot',
+	'ffsw-chkgw ffsw-keyupl',
+	'iwinfo ffsw-banner',
+	'iperf3',
+	'ffsw-ssid-changer',
+	'ffsw-wifi-quickfix'
+})
 
 #no wifi in x86 targets
 ifeq ($(GLUON_TARGET),x86-generic)
@@ -184,7 +186,7 @@ endif
 #                       opkg compare-versions "$1" '>>' "$2"
 #               to decide if a version is newer or not.
 
-DEFAULT_GLUON_RELEASE := ffwss-v051
+DEFAULT_GLUON_RELEASE := ffwss-v052
 
 
 #       GLUON_RELEASE
