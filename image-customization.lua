@@ -95,7 +95,7 @@ TOOLS_PACKAGES = {
 
 NO_WIFI = false
 
-#no wifi in x86 targets
+--no wifi in x86 targets
 if target('x86-generic', 'x86-geode', 'x86-64')
  then
 	NO_WIFI = true
@@ -105,7 +105,7 @@ if not NO_WIFI then
 	packages('ffsw-ssid-changer','ffsw-wifi-quickfix')
 end	
  
-# support the usb stack on x86 and add a few common USB NICs
+-- support the usb stack on x86 and add a few common USB NICs
 if target('x86-generic', 'x86-geode', 'x86-64')
 then
 	packages(USB_PACKAGES_BASIC)
@@ -116,7 +116,7 @@ then
 end
 
 
-##wifi-button pacakge only on some ar71-models ############################
+--#wifi-button pacakge only on some ar71-models ############################
 if device({
         'tp-link-tl-wr842n-nd-v1',
 		'tp-link-tl-wr842n-nd-v2',
