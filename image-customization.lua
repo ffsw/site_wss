@@ -102,7 +102,7 @@ if target('x86-generic', 'x86-geode', 'x86-64')
  end
 
 if not NO_WIFI then 
-	packages {'ffsw-ssid-changer','ffsw-wifi-quickfix')
+	packages('ffsw-ssid-changer','ffsw-wifi-quickfix')
 end	
  
 # support the usb stack on x86 and add a few common USB NICs
