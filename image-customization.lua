@@ -108,7 +108,7 @@ end
 -- support the usb stack on x86 and add a few common USB NICs
 if target('x86-generic', 'x86-geode', 'x86-64')
 then
-	packages(USB_PACKAGES_BASIC)
+    packages(USB_PACKAGES_BASIC)
     packages(USB_PACKAGES_STORAGE)
     packages(USB_PACKAGES_NET)
     packages(TOOLS_PACKAGES)
@@ -131,8 +131,6 @@ if device({
 		'tp-link-archer-c7-v5',
 		'tp-link-archer-c5-v1',		
     }) then
-    features {
-        'ffffm-button-bind',
-    }
-
+        features {'ffffm-button-bind', }
+end
 			
