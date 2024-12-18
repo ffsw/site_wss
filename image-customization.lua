@@ -31,13 +31,13 @@ if not device_class('tiny') then
     }
 end
 
-# support the USB stack
+-- support the USB stack
 USB_PACKAGES_BASIC = {
         'kmod-usb-core',
         'kmod-usb2',
         }
 
-# FAT32 Support for USB
+-- FAT32 Support for USB
 USB_PACKAGES_STORAGE = {
         'block-mount',
         'kmod-fs-ext4',
@@ -116,7 +116,7 @@ then
 end
 
 
---#wifi-button pacakge only on some ar71-models ############################
+--wifi-button pacakge only on some ar71-models 
 if device({
         'tp-link-tl-wr842n-nd-v1',
 		'tp-link-tl-wr842n-nd-v2',
