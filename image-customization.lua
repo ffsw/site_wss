@@ -131,6 +131,6 @@ if device({
 		'tp-link-archer-c7-v5',
 		'tp-link-archer-c5-v1',		
     }) then
-        features {'ffffm-button-bind', }
+        packages {'ffffm-button-bind'}
 end
 			
